@@ -1,0 +1,23 @@
+{
+  "name": "genome-app",
+  "main": "index.js",
+  "version": "0.0.1",
+  "author": {
+    "name": "Fedor Shubin"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vedi/genome-app.git"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "glob": "^7.1.1",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
