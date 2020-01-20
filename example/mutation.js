@@ -6,7 +6,7 @@
 
 module.exports = {
   // eslint-disable-next-line import/no-dynamic-require, global-require
-  resolver: file => require(file),
+  resolver: (file) => require(file),
   baseFolder: './app',
   configs: [
     '../config.local.json', '../config.local.js',
@@ -52,9 +52,9 @@ module.exports = {
       sources: [
         {
           name: 'tests',
-          path: process.env.NODE_ENV === 'test' ?
-            ['../test/spec/**/*.spec.js', '**/test/spec/**/*.spec.js'] :
-            [],
+          path: process.env.NODE_ENV === 'test'
+            ? ['../test/spec/**/*.spec.js', '**/test/spec/**/*.spec.js']
+            : [],
           resolve: false,
         },
       ],
